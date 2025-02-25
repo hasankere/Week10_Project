@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask_cors import CORS # type: ignore
 import pandas as pd
-from models.arima_model import get_arima_forecast
-from models.var_model import get_var_forecast
-from models.event_analysis import get_event_impact
+from models.arima_model import get_arima_forecast # type: ignore
+from models.var_model import get_var_forecast # type: ignore
+from models.event_analysis import get_event_impact # type: ignore
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for cross-origin requests
